@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobre o menu principal do Delícias Mar e Terra">
+
+
+    <meta name="keywords" content="mini site, criador de conteúdo, link na bio, portfólio digital, Instagram, TikTok, redes sociais, visibilidade online, promoção digital, marketing pessoal, link único, apresentação online, criador de conteúdos Angola, site para influencers, página pessoal online, tráfego para redes sociais, site responsivo, Betinhas, Influenciador, Facebook, Delícias Mar e Terra">
+    <meta name="author" content="Delícias Mar e Terra">
+    <meta name="robots" content="index, follow">
+
+
+      <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Delícias Mar e Terra">
+    <meta property="og:description" content="Descobre o menu principal do Delícias Mar e Terra.">
+    <meta property="og:image" content="https://deliciasmareterra.vercel.app/perfil.jpg"> 
+    <!-- imagem de destaque -->
+    <meta property="og:url" content="https://deliciasmareterra.vercel.app/">
+    <meta property="og:type" content="Menu Online">
+
+
+
+
+  <title>Delícias Mar e Terra</title>
+  <!-- Fonte moderna com peso variado -->
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Ícones elegantes e neon-friendly -->
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
+  
+  
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style-type: none;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      transition: all .2s linear ease-in-out;
+    }
+
+    body {
+      background: radial-gradient(circle at 10% 20%, #1a1e2a, #0b0d14);
+      font-family: 'Inter', sans-serif;
+      color: #f0f9ff;
+      line-height: 1.5;
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* textura de brilho sutil de restaurante estrelado */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: radial-gradient(circle at 30% 40%, rgba(255, 215, 0, 0.02) 1px, transparent 1px);
+      background-size: 35px 35px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* === HEADER BOAS-VINDAS COM CONTACTOS (CTA) === */
+    .hero-welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 48px;
+      margin-top: 10px;
+      background: rgba(8, 20, 36, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(255, 200, 90, 0.4);
+      border-radius: 56px;
+      padding: 32px 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 0 2px rgba(255, 215, 0, 0.05);
+      text-align: center;
+    }
+
+    .restaurant-name {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(145deg, #ffe9a7, #ffb347);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px #ffae00, 0 0 40px #ff7b00;
+      margin-bottom: 8px;
+    }
+
+    .welcome-message {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #ffddaa;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .welcome-message i {
+      color: #ffaa33;
+      text-shadow: 0 0 15px #ffb300;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 8px;
+    }
+
+    .btn-contact {
+      background: linear-gradient(165deg, #1e2a3a, #10181c);
+      border: 1px solid #f0b34b;
+      border-radius: 60px;
+      padding: 16px 32px;
+      color: #ffddaa;
+      font-weight: 700;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      transition: 0.2s;
+      box-shadow: 0 8px 0 #7f531e, 0 0 25px #ffae0060;
+    }
+
+    .btn-contact i {
+      font-size: 1.7rem;
+      color: #ffd966;
+    }
+
+    .btn-contact:active {
+      transform: translateY(6px);
+      box-shadow: 0 2px 0 #7f531e, 0 0 35px #ffae00;
+    }
+
+    .btn-phone {
+      background: rgba(20, 30, 45, 0.8);
+      border: 1px solid #a0d0ff;
+      box-shadow: 0 8px 0 #1f4865, 0 0 20px #3e9ac0;
+    }
+
+    .btn-phone i {
+      color: #aadcff;
+    }
+
+    /* === CARROSSEL DE PRATOS ANIMADO === */
+    .menu-section {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      border-bottom: 1px dashed rgba(255, 200, 0, 0.5);
+      padding-bottom: 16px;
+    }
+
+    .section-header h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #ffe08c, #fff0c0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .neon-badge {
+      background: #b3470b33;
+      border: 1px solid #ffa047;
+      border-radius: 30px;
+      padding: 6px 22px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: #ffce8d;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    /* CARROSSEL HORIZONTAL SUAVE */
+    .carousel-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 25px;
+      margin-bottom: 5px;
+      scrollbar-width: thin;
+      scrollbar-color: #ffb347 #251c0f;
+      -webkit-overflow-scrolling: touch;
+      cursor: grab;
+    }
+
+    .carousel-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .carousel-wrapper::-webkit-scrollbar-track {
+      background: #1e1c14;
+      border-radius: 20px;
+    }
+
+    .carousel-wrapper::-webkit-scrollbar-thumb {
+      background: linear-gradient(145deg, #ff9f2f, #ffc857);
+      border-radius: 20px;
+      box-shadow: inset 0 0 6px #ffdd55;
+    }
+
+    .dish-carousel {
+      display: flex;
+      gap: 30px;
+      padding: 10px 6px 25px 6px;
+      width: max-content;
+    }
+
+    /* CARDS DE PRATO – ESTILO ASSINATURA */
+    .dish-card {
+      width: 290px;
+      background: rgba(18, 26, 33, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(255, 180, 60, 0.4);
+      border-radius: 40px;
+      padding: 22px 18px 24px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1);
+      box-shadow: 0 15px 30px #0000004d, 0 0 0 1px rgba(255, 200, 0, 0.1);
+      position: relative;
+    }
+
+    .dish-card:hover {
+      transform: scale(1.02) translateY(-6px);
+      border-color: #ffc285;
+      background: rgba(28, 38, 48, 0.9);
+      box-shadow: 0 0 35px #ffb34780, 0 15px 25px #000;
+    }
+
+    .dish-img {
+      width: 100%;
+      height: 190px;
+      background: radial-gradient(circle at 50% 30%, #2f3e4a, #151e24);
+      border-radius: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border: 1px solid #fb9e4e;
+      box-shadow: inset 0 0 35px #00000099, 0 10px 20px #0000005e;
+    }
+
+    /* ícones simulam imagens de pratos - para versão real trocar por <img> */
+    .dish-img i {
+      font-size: 5.8rem;
+      filter: drop-shadow(0 0 12px #ffb347);
+      color: #ffe28c;
+    }
+
+     .dish-img img{
+       width: 230px;
+       height: 190px;
+       object-fit: cover;
+       border-radius: 28px;
+     }
+
+    .dish-name {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      background: linear-gradient(145deg, #fff7e6, #ffdbb5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    .dish-price {
+      font-size: 2rem;
+      font-weight: 900;
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      color: #ffe69b;
+      text-shadow: 0 0 15px #ffb800;
+      margin-bottom: 20px;
+    }
+
+    .dish-price span {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #ffe0a3;
+    }
+
+    .btn-order {
+      background: linear-gradient(145deg, #25a05e, #1e7a4b);
+      border: none;
+      border-radius: 100px;
+      padding: 16px 0;
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border: 1px solid #caffa0;
+      box-shadow: 0 0 25px #33cc99, 0 8px 0 #0e4f30;
+      transition: 0.07s ease;
+      text-decoration: none;
+      margin-top: 6px;
+    }
+
+    .btn-order i {
+      font-size: 1.5rem;
+    }
+
+    .btn-order:active {
+      transform: translateY(8px);
+      box-shadow: 0 0 35px #33dd88, 0 2px 0 #0e4f30;
+    }
+
+    /* === ÁREA DE LOCALIZAÇÃO E CONTACTOS === */
+    .info-location {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      background: rgba(0, 15, 25, 0.7);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid #ffbf6b;
+      border-radius: 60px 60px 60px 60px;
+      padding: 38px 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 30px;
+      box-shadow: 0 0 50px #ff9f1c30;
+    }
+
+    .contact-block {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .info-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      background: linear-gradient(145deg, #ffe1a4, #ffbb4a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 1.25rem;
+      color: #ffddaa;
+      background: rgba(255, 210, 90, 0.08);
+      padding: 12px 28px;
+      border-radius: 50px;
+      border: 1px solid #ffbb55;
+      backdrop-filter: blur(4px);
+    }
+
+    .info-item i {
+      font-size: 1.9rem;
+      min-width: 36px;
+      color: #ffb347;
+      text-shadow: 0 0 20px #ffae00;
+    }
+
+    .info-item a {
+      color: #fff4d2;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dashed #ffbb55;
+    }
+
+    .info-item span {
+      font-weight: 500;
+    }
+
+    .map-sim {
+      background: #0e1c24;
+      padding: 12px 28px;
+      border-radius: 48px;
+      border: 1px solid #faa94e;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.2rem;
+    }
+
+    .map-sim i {
+      font-size: 2.2rem;
+      color: #7ad0ff;
+    }
+
+    /* === RESPONSIVIDADE === */
+    @media (max-width: 700px) {
+      .hero-welcome { padding: 24px 18px; }
+      .restaurant-name { font-size: 2.3rem; }
+      .welcome-message { font-size: 1.2rem; }
+      .btn-contact { padding: 14px 24px; font-size: 1.1rem; }
+      .section-header h2 { font-size: 1.8rem; }
+      .dish-card { width: 260px; }
+      .info-item { font-size: 1.1rem; padding: 10px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0; }
+      .restaurant-name { font-size: 1.9rem; }
+      .contact-actions { flex-direction: column; width: 100%; }
+      .btn-contact { width: 100%; justify-content: center; }
+      .dish-card { width: 240px; }
+      .dish-name { font-size: 1.5rem; }
+      .dish-price { font-size: 1.7rem; }
+      .info-location { flex-direction: column; align-items: stretch; }
+    }
+
+    .footnote {
+      text-align: center;
+      margin-top: 40px;
+      color: #dabd8b;
+      border-top: 1px solid #ffae4260;
+      padding-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    /* brilho suave */
+    .glow {
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0% { text-shadow: 0 0 10px #ffb347; }
+      50% { text-shadow: 0 0 20px #ffd966, 0 0 8px #ffb347; }
+      100% { text-shadow: 0 0 10px #ffb347; }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Estilo do Menu Futurista */
+.menu {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.menu-item i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.menu-item .label {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: max-content;
+}
+
+.menu-item:hover i {
+  color: #fff;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
+
+.menu-item:hover .label {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+/* Efeito de luz de fundo */
+.menu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff00cc, #00f7ff, #00ff99, #ffeb3b);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: glowing 3s ease infinite;
+  opacity: 0.5;
+  filter: blur(20px);
+}
+
+/* Destaque especial para o botão Home */
+.home-btn {
+  transform: translateY(-20px);
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #00f7ff, #00ff99);
+  box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff, 0 0 45px #00f7ff;
+  border-radius: 50%;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.home-btn i {
+  color: #0f0c29 !important;
+  font-size: 1.8rem;
+  text-shadow: none;
+}
+
+.home-btn .label {
+  color: #00f7ff;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+.home-btn::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #00f7ff, #00ff99, #ff00cc) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: rotate 4s linear infinite;
+}
+
+/* Animações */
+@keyframes glowing {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floating {
+  0% { transform: translateY(-20px) scale(1); }
+  50% { transform: translateY(-30px) scale(1.05); }
+  100% { transform: translateY(-20px) scale(1); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulsate {
+  0% { text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff; }
+  100% { text-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff, 0 0 45px #00f7ff; }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .menu {
+      width: 95%;
+      height: 60px;
+  }
+  
+  .menu-item {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .home-btn {
+      width: 60px;
+      height: 60px;
+  }
+  
+  .menu-item i {
+      font-size: 1.3rem;
+  }
+  
+  .home-btn i {
+      font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+  </style>
+</head>
+<body>
+  
+  
+  
+  
+  
+  
+  <div class="container">
+
+    <!-- === CTA DE BEM-VINDO + WHATSAPP E TELEFONE (CONTACTOS EM DESTAQUE) === -->
+    <div class="hero-welcome">
+      <h1 class="restaurant-name"><i class="fas fa-utensils" style="margin-right: 12px; -webkit-text-fill-color: initial; color: #ffb549; text-shadow: 0 0 30px #ff8800;"></i> Delícias Mar e Terra</h1>
+      <div class="welcome-message">
+        Bem-vindo ao sabor que conecta
+        <i class="fas fa-arrow-down" style="color: #ffd966;"></i>
+      </div>
+      
+      
+      <div class="contact-actions">
+        <!-- WHATSAPP DIRETO -->
+        <a href="https://wa.me/244925417449?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20encomenda." class="btn-contact" target="_blank">
+          <i class="fab fa-whatsapp"></i> Encomendar 
+        </a>
+        
+        
+        
+        
+        
+        <!-- BOTÃO TELEFONE -->
+        
+        <a href="tel:+244925417449" class="btn-contact btn-phone">
+          <i class="fas fa-phone-alt"></i> Ligar
+        </a>
+      </div>
+      <p style="margin-top: 24px; color: #ffe4b5; font-size: 1.1rem; max-width: 600px;">
+        <i class="fas fa-clock" style="margin-right: 8px;"></i> Aberto: 09h–20h (Seg–Dom)
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- === MENU: CARROSSEL DE PRATOS ANIMADO === -->
+    <div class="menu-section">
+      <div class="section-header">
+        <h2>
+          <i class="fas fa-fire" style="color: #ff884d;"></i>  Menu Exclusivo
+        </h2>
+        <span class="neon-badge"><i class="fas fa-hologram"></i> assinatura do chef</span>
+      </div>
+
+
+
+
+
+
+      <!-- CARROSSEL HORIZONTAL COM CARDS -->
+      <div class="carousel-wrapper">
+        <div class="dish-carousel">
+
+          <!-- PRATO 1 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_5.jpg"/>
+            </div>
+            <div class="dish-name">Duas cubas médias</div>
+            <div class="dish-price">
+              <span>AOA</span> 80.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20duas%20cubas%20médias" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar 
+            </a>
+          </div>
+
+
+
+
+          <!-- PRATO 2 -->
+          <div class="dish-card">
+            <div class="dish-img">
+             <img src="img_2.jpg"/>
+            </div>
+            <div class="dish-name">Marmita</div>
+            <div class="dish-price">
+              <span>AOA</span> 18.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20a%20Marmita" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar 
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+        <!-- PRATO 6 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_3.jpg"/>
+            </div>
+            <div class="dish-name">Promo Sexta-Feira</div>
+            <div class="dish-price">
+              <span>AOA</span> 35.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20a%20Promo%20Sexta-feira" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar 
+            </a>
+          </div>
+          
+          
+          
+          
+          <!-- PRATO 7 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_7.jpg"/>
+            </div>
+            <div class="dish-name">Cuba grande mix de mariscos</div>
+            <div class="dish-price">
+              <span>AOA</span> 130.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20a%20Cuba%20grande%20mix%20de%20mariscos" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar 
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          <!-- PRATO 8 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_8.jpg"/>
+            </div>
+            <div class="dish-name">Menu para 4 pessoas</div>
+            <div class="dish-price">
+              <span>AOA</span> 48.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20o%20Menu%20para%20quatro%20pessoas" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar
+            </a>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <!-- PRATO 9 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_9.jpg"/>
+            </div>
+            <div class="dish-name">Menu para 3 pessoas</div>
+            <div class="dish-price">
+              <span>AOA</span> 38.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20o%20Menu%20para%20três%20pessoas" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar
+            </a>
+          </div>
+        
+        
+        
+        
+        
+        <!-- PRATO 10 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_10.jpg"/>
+            </div>
+            <div class="dish-name">Menu para 2 pessoas</div>
+            <div class="dish-price">
+              <span>AOA</span> 28.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20o%20Menu%20para%20duas%20pessoas" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar 
+            </a>
+          </div>
+          
+          
+          
+          
+          
+
+          
+          
+          
+          
+          
+          
+          <!-- PRATO 12 -->
+          <div class="dish-card">
+            <div class="dish-img">
+              <img src="img_12.jpg"/>
+            </div>
+            <div class="dish-name">Menu para 1 pessoa</div>
+            <div class="dish-price">
+              <span>AOA</span> 18.000
+            </div>
+            <a href="https://wa.me/244925417449?text=Olá!%20Quero%20o%20Menu%20para%20uma%20pessoa" class="btn-order" target="_blank">
+              <i class="fab fa-whatsapp"></i> Encomendar
+            </a>
+          </div>
+          
+          
+          
+        </div> 
+        <!-- fim dish-carousel -->
+      
+      
+      </div>
+  <!-- fim carousel-wrapper -->
+      <div style="display: flex; justify-content: flex-end; color: #ffd09a; margin-top: -10px; padding-right: 25px;">
+        <i class="fas fa-arrow-right"></i> arraste para mais pratos
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Rodapé elegante -->
+  <div class="footnote">
+       Delícias Mar e Terra • Com carinho na cozinha, para encantar o seu paladar a cada mordida 
+      <br><span style="opacity: 0.7;">© 2026 – Todos os direitos reservados</span>
+    </div>
+  </div> 
+  
+  
+  
+     <!-- fim container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- === 
+     <nav class="menu">
+        <a href="tel:+244936584701" class="menu-item">
+            <i class="fas fa-phone-alt"></i>
+            <span class="label">Telefone</span>
+        </a>
+        
+        
+        <a href="https://wa.me/244936584701?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." class="menu-item">
+            <i class="fab fa-whatsapp"></i>
+            <span class="label">Fazer pedido</span>
+        </a>
+        
+        
+        <a href="#inicio" class="menu-item home-btn">
+            <i class="fas fa-home"></i>
+            <span class="label">Home</span>
+        </a>
+
+
+        <a href="#" target="_blank" class="menu-item">
+            <i class="fab fa-instagram"></i>
+            <span class="label">Instagram</span>
+        </a>
+
+        <a href="#" target="_blank" class="menu-item">
+            <i class="fab fa-tiktok"></i>
+            <span class="label">TikTok</span>
+        </a>
+    </nav>
+
+
+
+ -->
+
+
+  <script>
+    (function() {
+      // pequeno ajuste: feedback visual de carrossel
+      const carousel = document.querySelector('.carousel-wrapper');
+      if(carousel) {
+        carousel.addEventListener('mousedown', () => carousel.style.cursor = 'grabbing');
+        carousel.addEventListener('mouseup', () => carousel.style.cursor = 'grab');
+      }
+    })();
+  </script>
+</body>
+</html>
